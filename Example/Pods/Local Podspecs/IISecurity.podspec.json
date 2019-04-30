@@ -1,6 +1,6 @@
 {
   "name": "IISecurity",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "IISecurity",
   "description": "IISecurity:\n1.引入了安全监测与性能处理代码\n2.引入CryptSwift代码",
   "homepage": "https://github.com/hatjs880328s/IISecurity",
@@ -13,12 +13,17 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IISecurity.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "IISecurity/Classes/**/*",
+  "requires_arc": true,
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.0",
+    "SWIFT_OPTIMIZATION_LEVEL": "-Owholemodule"
+  },
   "dependencies": {
     "IISwiftBaseUti": [
 

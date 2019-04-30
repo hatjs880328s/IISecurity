@@ -6,7 +6,7 @@ PODS:
   - IIBLL/IBLL (0.2.0):
     - IIBLL/BeeHive
   - III18N (0.8.0)
-  - IISecurity (0.1.0):
+  - IISecurity (0.2.0):
     - IIBLL
     - IISwiftBaseUti
   - IISwiftBaseUti (1.3.3):
@@ -66,7 +66,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   IIBLL: 875c2c2c118c7d0e3850f3b08dc2ac0a6194cf16
   III18N: 89145d37dfb9153c1f6a4243657d07dd8033dc1b
-  IISecurity: 170c44588787004ffbdfc7ad50dcd435101459a4
+  IISecurity: 21d07ed4218f519862b95869b47d0e025ea5b90a
   IISwiftBaseUti: d1e6d3084fa5e7348ccdea9dc8e83edc9a0a8299
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
