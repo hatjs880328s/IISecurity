@@ -1,0 +1,6 @@
+framework module Pods_IISecurity_Tests {
+  umbrella header "Pods-IISecurity_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

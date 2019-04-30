@@ -1,0 +1,30 @@
+{
+  "name": "IISecurity",
+  "version": "0.1.0",
+  "summary": "IISecurity",
+  "description": "IISecurity:\n1.引入了安全监测与性能处理代码\n2.引入CryptSwift代码",
+  "homepage": "https://github.com/hatjs880328s/IISecurity",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hatjs880328s": "shanwzh@inspur.com"
+  },
+  "source": {
+    "git": "https://github.com/hatjs880328s/IISecurity.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IISecurity/Classes/**/*",
+  "dependencies": {
+    "IISwiftBaseUti": [
+
+    ],
+    "IIBLL": [
+
+    ]
+  }
+}

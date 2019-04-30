@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IISecurity_Example' do
+  pod 'IISecurity', :path => '../'
+
+  target 'IISecurity_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
