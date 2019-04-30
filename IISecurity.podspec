@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISecurity'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'IISecurity'
 
 # This description is used to generate tags and improve search results.
@@ -21,6 +21,8 @@ Pod::Spec.new do |s|
   IISecurity:
   1.引入了安全监测与性能处理代码
   2.引入CryptSwift代码
+  3.OpenSSL-Universal
+  4.iiexchange-pkcs12
                        DESC
 
   s.homepage         = 'https://github.com/hatjs880328s/IISecurity'
@@ -32,11 +34,19 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files  = "IISecurity/Classes/**/*.swift"
-
   s.requires_arc = true
 
   s.swift_version = "4.2"
+
+  s.static_framework = true
+
+  s.subspec 'Exchange' do |ss|
+      ss.source_files = 'IISecurity/Classes/Exchange/*.{h,m}'
+  end
+
+  s.subspec 'IISecurity' do |ss|
+      ss.source_files  = 'IISecurity/Classes/IISecurity/**/*.swift'
+  end
 
   s.cocoapods_version = '>= 1.4.0'
 
@@ -48,7 +58,8 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.frameworks = 'UIKit', 'MapKit' 1.0.2.13
   s.dependency 'IISwiftBaseUti'
   s.dependency 'IIBLL'
+  s.dependency 'OpenSSL-Universal'
 end

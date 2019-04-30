@@ -1,4 +1,4 @@
-framework module IIBLL {
+module IIBLL {
   umbrella header "IIBLL-umbrella.h"
 
   export *

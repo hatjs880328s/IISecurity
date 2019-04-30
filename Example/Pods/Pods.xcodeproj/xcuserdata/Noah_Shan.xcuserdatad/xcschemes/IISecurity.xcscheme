@@ -14,8 +14,8 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42C9F067046719E8EF9F680B065F0CEA"
-               BuildableName = "IISecurity.framework"
+               BlueprintIdentifier = "30705E348E4D70EFCE690A1D70B91891"
+               BuildableName = "libIISecurity.a"
                BlueprintName = "IISecurity"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

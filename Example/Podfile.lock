@@ -1,14 +1,25 @@
 PODS:
-  - IIBLL (0.2.0):
-    - IIBLL/BeeHive (= 0.2.0)
-    - IIBLL/IBLL (= 0.2.0)
-  - IIBLL/BeeHive (0.2.0)
-  - IIBLL/IBLL (0.2.0):
+  - IIBLL (0.2.1):
+    - IIBLL/BeeHive (= 0.2.1)
+    - IIBLL/IBLL (= 0.2.1)
+  - IIBLL/BeeHive (0.2.1)
+  - IIBLL/IBLL (0.2.1):
     - IIBLL/BeeHive
   - III18N (0.8.0)
-  - IISecurity (0.2.0):
+  - IISecurity (0.4.0):
+    - IIBLL
+    - IISecurity/Exchange (= 0.4.0)
+    - IISecurity/IISecurity (= 0.4.0)
+    - IISwiftBaseUti
+    - OpenSSL-Universal
+  - IISecurity/Exchange (0.4.0):
     - IIBLL
     - IISwiftBaseUti
+    - OpenSSL-Universal
+  - IISecurity/IISecurity (0.4.0):
+    - IIBLL
+    - IISwiftBaseUti
+    - OpenSSL-Universal
   - IISwiftBaseUti (1.3.3):
     - III18N
     - IISwiftBaseUti/IIAspects (= 1.3.3)
@@ -47,6 +58,7 @@ PODS:
   - IISwiftBaseUti/YYCache (1.3.3):
     - III18N
     - SnapKit (~> 4.2.0)
+  - OpenSSL-Universal (1.0.2.17)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
@@ -57,6 +69,7 @@ SPEC REPOS:
     - IIBLL
     - III18N
     - IISwiftBaseUti
+    - OpenSSL-Universal
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -64,12 +77,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IIBLL: 875c2c2c118c7d0e3850f3b08dc2ac0a6194cf16
+  IIBLL: 6fd15b715658c9f66d27dd7428b65c91d3f47045
   III18N: 89145d37dfb9153c1f6a4243657d07dd8033dc1b
-  IISecurity: 21d07ed4218f519862b95869b47d0e025ea5b90a
+  IISecurity: c6f4effc6234e13378ef3b2693f9e44948c62eb7
   IISwiftBaseUti: d1e6d3084fa5e7348ccdea9dc8e83edc9a0a8299
+  OpenSSL-Universal: ff04c2e6befc3f1247ae039e60c93f76345b3b5a
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: d3373438e193453eaa89f6b9985c42e988b63559
+PODFILE CHECKSUM: aa0435ece83f620466b5621a74384fca5172ee79
 
 COCOAPODS: 1.6.1

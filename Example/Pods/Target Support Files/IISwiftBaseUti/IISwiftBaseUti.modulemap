@@ -1,4 +1,4 @@
-framework module IISwiftBaseUti {
+module IISwiftBaseUti {
   umbrella header "IISwiftBaseUti-umbrella.h"
 
   export *

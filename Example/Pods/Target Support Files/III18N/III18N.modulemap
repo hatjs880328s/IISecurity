@@ -1,4 +1,4 @@
-framework module III18N {
+module III18N {
   umbrella header "III18N-umbrella.h"
 
   export *

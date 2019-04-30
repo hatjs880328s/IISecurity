@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "PKCS12.h"
 
 FOUNDATION_EXPORT double IISecurityVersionNumber;
 FOUNDATION_EXPORT const unsigned char IISecurityVersionString[];

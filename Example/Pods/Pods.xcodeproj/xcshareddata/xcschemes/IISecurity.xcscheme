@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E218CAF3EDC8B896654D29755F49E7D5"
-               BuildableName = "IISecurity.framework"
+               BlueprintIdentifier = "90740ABB28B379AFB246D0EA8311AD95"
+               BuildableName = "libIISecurity.a"
                BlueprintName = "IISecurity"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E218CAF3EDC8B896654D29755F49E7D5"
-            BuildableName = "IISecurity.framework"
+            BlueprintIdentifier = "90740ABB28B379AFB246D0EA8311AD95"
+            BuildableName = "libIISecurity.a"
             BlueprintName = "IISecurity"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
@@ -63,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E218CAF3EDC8B896654D29755F49E7D5"
-            BuildableName = "IISecurity.framework"
+            BlueprintIdentifier = "90740ABB28B379AFB246D0EA8311AD95"
+            BuildableName = "libIISecurity.a"
             BlueprintName = "IISecurity"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

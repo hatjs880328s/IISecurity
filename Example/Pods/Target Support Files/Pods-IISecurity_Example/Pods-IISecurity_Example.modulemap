@@ -1,4 +1,4 @@
-framework module Pods_IISecurity_Example {
+module Pods_IISecurity_Example {
   umbrella header "Pods-IISecurity_Example-umbrella.h"
 
   export *

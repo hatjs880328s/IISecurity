@@ -13,8 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		77F10269772584564E5D73BF /* Pods_IISecurity_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1DDC588C0A1385CBB58AAB /* Pods_IISecurity_Example.framework */; };
-		88C1B85C9AA7982AF1387854 /* Pods_IISecurity_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5834467A4D52CA8669000DFB /* Pods_IISecurity_Tests.framework */; };
+		7F900C8F850DB688F54E8006 /* libPods-IISecurity_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE850715688C52DAFDA0DD08 /* libPods-IISecurity_Tests.a */; };
+		A74EF176A624C943ECC87FBE /* libPods-IISecurity_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9105A33D9A740F612F97A6 /* libPods-IISecurity_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C9105A33D9A740F612F97A6 /* libPods-IISecurity_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IISecurity_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		366E6BF649F6FA7F9ED42C0E /* Pods-IISecurity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IISecurity_Tests.release.xcconfig"; path = "Target Support Files/Pods-IISecurity_Tests/Pods-IISecurity_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3B0CB102ED3B4227684FE74D /* Pods-IISecurity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IISecurity_Example.release.xcconfig"; path = "Target Support Files/Pods-IISecurity_Example/Pods-IISecurity_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5834467A4D52CA8669000DFB /* Pods_IISecurity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IISecurity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B79058BD303478D3E5F985D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* IISecurity_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IISecurity_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		607FACE51AFB9204008FA782 /* IISecurity_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IISecurity_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6B1DDC588C0A1385CBB58AAB /* Pods_IISecurity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IISecurity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE850715688C52DAFDA0DD08 /* libPods-IISecurity_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IISecurity_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83B281D31276C6E1C6F95D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D523D2C6F17BF086F0BF421F /* Pods-IISecurity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IISecurity_Tests.debug.xcconfig"; path = "Target Support Files/Pods-IISecurity_Tests/Pods-IISecurity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3569C7F32A7077B88B79981 /* Pods-IISecurity_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IISecurity_Example.debug.xcconfig"; path = "Target Support Files/Pods-IISecurity_Example/Pods-IISecurity_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77F10269772584564E5D73BF /* Pods_IISecurity_Example.framework in Frameworks */,
+				A74EF176A624C943ECC87FBE /* libPods-IISecurity_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C1B85C9AA7982AF1387854 /* Pods_IISecurity_Tests.framework in Frameworks */,
+				7F900C8F850DB688F54E8006 /* libPods-IISecurity_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +142,8 @@
 		8E50C010BED020A7E0C3FEF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B1DDC588C0A1385CBB58AAB /* Pods_IISecurity_Example.framework */,
-				5834467A4D52CA8669000DFB /* Pods_IISecurity_Tests.framework */,
+				0C9105A33D9A740F612F97A6 /* libPods-IISecurity_Example.a */,
+				AE850715688C52DAFDA0DD08 /* libPods-IISecurity_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				BF5B251D042A32EAD9C1073C /* [CP] Embed Pods Frameworks */,
+				631C1A4D16A877410AD96720 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +283,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF5B251D042A32EAD9C1073C /* [CP] Embed Pods Frameworks */ = {
+		631C1A4D16A877410AD96720 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,26 +291,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IISecurity_Example/Pods-IISecurity_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IIBLL/IIBLL.framework",
-				"${BUILT_PRODUCTS_DIR}/III18N/III18N.framework",
-				"${BUILT_PRODUCTS_DIR}/IISecurity/IISecurity.framework",
-				"${BUILT_PRODUCTS_DIR}/IISwiftBaseUti/IISwiftBaseUti.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-IISecurity_Example/Pods-IISecurity_Example-resources.sh",
+				"${PODS_ROOT}/IIBLL/IIBLL/Classes/BeeHive/BeeHive.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IIBLL.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/III18N.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IISecurity.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IISwiftBaseUti.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BeeHive.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IISecurity_Example/Pods-IISecurity_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IISecurity_Example/Pods-IISecurity_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C350E05BE0BECFA39E39A3BD /* [CP] Check Pods Manifest.lock */ = {

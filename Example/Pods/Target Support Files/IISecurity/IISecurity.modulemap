@@ -1,4 +1,4 @@
-framework module IISecurity {
+module IISecurity {
   umbrella header "IISecurity-umbrella.h"
 
   export *
