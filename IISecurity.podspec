@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISecurity'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'IISecurity'
 
 # This description is used to generate tags and improve search results.
@@ -33,6 +33,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'IISecurity/Classes/**/*'
+
+  s.requires_arc = true
+
+  s.pod_target_xcconfig = { 'SWIFT_OPTIMIZATION_LEVEL' => '-O', 'SWIFT_COMPILATION_MODE' => 'wholemodule', 'SWIFT_DISABLE_SAFETY_CHECKS' => 'YES', 'SWIFT_ENFORCE_EXCLUSIVE_ACCESS' => 'debug-only', 'GCC_UNROLL_LOOPS' => 'YES'}
+end
+
   
   # s.resource_bundles = {
   #   'IISecurity' => ['IISecurity/Assets/*.png']

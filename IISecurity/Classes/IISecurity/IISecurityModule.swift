@@ -59,7 +59,7 @@ public class IISecurityModule: NSObject {
     }
 
     /// 如果是此vc-class 则忽略长时间无响应跳转
-    private static var ignoreVC: AnyClass!
+    public static var ignoreVC: AnyClass!
 
 }
 
