@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISecurity'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'IISecurity'
 
 # This description is used to generate tags and improve search results.
@@ -46,6 +46,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'IISecurity' do |ss|
       ss.source_files  = 'IISecurity/Classes/IISecurity/**/*.swift'
+  end
+
+  s.subspec 'DeviceSafeTool' do |ss|
+      ss.source_files  = 'IISecurity/Classes/DeviceSafeTool/**/*.{h,m}'
   end
 
   s.cocoapods_version = '>= 1.4.0'

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "DeviceSafeTool.h"
 #import "PKCS12.h"
 
 FOUNDATION_EXPORT double IISecurityVersionNumber;
