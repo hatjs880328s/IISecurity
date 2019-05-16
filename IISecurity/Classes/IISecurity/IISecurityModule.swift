@@ -111,8 +111,15 @@ extension IISecurityModule {
 /// 密码复杂度校验
 extension IISecurityModule {
 
-    /// 大写字母， 小写字母， 数字， 特殊字符 4选3  8-16位
-    @objc public func checkPwd(pwd: String) -> Bool {
+    /// 大写字母， 小写字母， 数字， 特殊字符
+    ///
+    /// - Parameters:
+    ///   - pwd: 密码串
+    ///   - typeCount: 种类数
+    ///   - pwdMinCount: 最小位数
+    ///   - pwdMaxCount: 最大位数
+    /// - Returns: 是否符合要求
+    @objc public func checkPwd(pwd: String, typeCount: Int, pwdMinCount: Int, pwdMaxCount: Int) -> Bool {
         var typeDic = [Int: Int]()
         let num = RecognitionDoor.getInstance().recognition(with: pwd) ?? []
         for eachItem in num {
@@ -129,7 +136,7 @@ extension IISecurityModule {
                 break
             }
         }
-        if typeDic.keys.count >= 3 && pwd.length >= 8 && pwd.length <= 16 {
+        if typeDic.keys.count >= typeCount && pwd.length >= pwdMinCount && pwd.length <= pwdMaxCount {
             return true
         }
         return false
