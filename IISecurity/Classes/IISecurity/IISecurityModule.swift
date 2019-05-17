@@ -119,7 +119,7 @@ extension IISecurityModule {
     ///   - pwdMinCount: 最小位数
     ///   - pwdMaxCount: 最大位数
     /// - Returns: 是否符合要求
-    @objc public func checkPwd(pwd: String, typeCount: Int, pwdMinCount: Int, pwdMaxCount: Int) -> Bool {
+    @objc public func checkPwd(pwd: String, typeCount: Int = 3, pwdMinCount: Int = 8, pwdMaxCount: Int = 16) -> Bool {
         var typeDic = [Int: Int]()
         let num = RecognitionDoor.getInstance().recognition(with: pwd) ?? []
         for eachItem in num {
