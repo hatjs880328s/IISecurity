@@ -125,6 +125,38 @@ public extension Foundation.Date {
         return calender.component(.day, from: self)
     }
 
+    /// 根据阴历数字获取中国的月份时间
+    static public func getInt2LunarMonthInfo(intValue: Int) -> String {
+        switch intValue {
+        case 1:
+            return "正月"
+        case 2:
+            return "二月"
+        case 3:
+            return "三月"
+        case 4:
+            return "四月"
+        case 5:
+            return "五月"
+        case 6:
+            return "六月"
+        case 7:
+            return "七月"
+        case 8:
+            return "八月"
+        case 9:
+            return "九月"
+        case 10:
+            return "十月"
+        case 11:
+            return "冬月"
+        case 12:
+            return "腊月"
+        default:
+            return ""
+        }
+    }
+
     /// 根据阴历数字获取中国的时间
     static public func changeIntToLunarInfo(intValue: Int) -> String {
         switch intValue {

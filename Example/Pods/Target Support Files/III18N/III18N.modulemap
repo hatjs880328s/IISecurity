@@ -1,6 +1,0 @@
-module III18N {
-  umbrella header "III18N-umbrella.h"
-
-  export *
-  module * { export * }
-}

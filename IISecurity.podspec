@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISecurity'
-  s.version          = '0.5.2'
+  s.version          = '0.5.3'
   s.summary          = 'IISecurity'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.swift_version = "4.2"
+  s.swift_version = '5.0'
 
   s.static_framework = true
 

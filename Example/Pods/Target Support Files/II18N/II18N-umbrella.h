@@ -12,6 +12,6 @@
 
 #import "IMPI18N.h"
 
-FOUNDATION_EXPORT double III18NVersionNumber;
-FOUNDATION_EXPORT const unsigned char III18NVersionString[];
+FOUNDATION_EXPORT double II18NVersionNumber;
+FOUNDATION_EXPORT const unsigned char II18NVersionString[];
 

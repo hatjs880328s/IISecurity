@@ -1,0 +1,6 @@
+module II18N {
+  umbrella header "II18N-umbrella.h"
+
+  export *
+  module * { export * }
+}

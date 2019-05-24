@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E867529427CC85FF626D4D491F9389B8"
+               BlueprintIdentifier = "217226C009207CD721D83DE9D332B6AE"
                BuildableName = "libIIBLL.a"
                BlueprintName = "IIBLL"
                ReferencedContainer = "container:Pods.xcodeproj">

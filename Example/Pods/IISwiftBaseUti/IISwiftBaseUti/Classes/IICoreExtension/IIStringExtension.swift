@@ -25,6 +25,18 @@ public enum ObjectType {
 
 public extension String {
 
+    /// 删除字符串中的换行符
+    public func tripEnter() -> String {
+        var middleSelf = self
+        if middleSelf.contains("\r\n") {
+            middleSelf = middleSelf.replace(find: "\r\n", replaceStr: " ")
+        }
+        if middleSelf.contains("\n\r") {
+            middleSelf = middleSelf.replace(find: "\n\r", replaceStr: " ")
+        }
+        return middleSelf.replace(find: "\r", replaceStr: " ").replace(find: "\n", replaceStr: " ")
+    }
+
     /// 根据给定的num数值，将字符串分割成多段str,每一段str都包含num个字符，最后一段不补齐
     /// dsalsdfjdsla
     /// 0   4   8

@@ -9,7 +9,7 @@
 import Foundation
 import Photos
 
-@_exported import III18N
+@_exported import II18N
 
 /*
  相册权限请求设置,继承自[IIHardwareAuthRequest]-切记对象要用类成员变量

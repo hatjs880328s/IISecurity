@@ -27,8 +27,12 @@
 #import "AgoraAudioIBLL.h"
 #import "DiscoverIBLL.h"
 #import "IIExchangeIBLL.h"
+#import "IIsuprIBLL.h"
 #import "LoginIBLLOC.h"
 #import "CloudMineIBLL.h"
+#import "PhoneBookIBLL.h"
+#import "SearchSelectDelegate.h"
+#import "UMShareIBLL.h"
 #import "WebEXIBLL.h"
 #import "WorkBenchIBLL.h"
 

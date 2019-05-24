@@ -1,67 +1,67 @@
 PODS:
-  - IIBLL (0.2.1):
-    - IIBLL/BeeHive (= 0.2.1)
-    - IIBLL/IBLL (= 0.2.1)
-  - IIBLL/BeeHive (0.2.1)
-  - IIBLL/IBLL (0.2.1):
+  - II18N (0.1.0)
+  - IIBLL (0.2.4):
+    - IIBLL/BeeHive (= 0.2.4)
+    - IIBLL/IBLL (= 0.2.4)
+  - IIBLL/BeeHive (0.2.4)
+  - IIBLL/IBLL (0.2.4):
     - IIBLL/BeeHive
-  - III18N (0.8.0)
-  - IISecurity (0.5.0):
+  - IISecurity (0.5.3):
     - IIBLL
-    - IISecurity/DeviceSafeTool (= 0.5.0)
-    - IISecurity/Exchange (= 0.5.0)
-    - IISecurity/IISecurity (= 0.5.0)
+    - IISecurity/DeviceSafeTool (= 0.5.3)
+    - IISecurity/Exchange (= 0.5.3)
+    - IISecurity/IISecurity (= 0.5.3)
     - IISwiftBaseUti
     - OpenSSL-Universal
-  - IISecurity/DeviceSafeTool (0.5.0):
-    - IIBLL
-    - IISwiftBaseUti
-    - OpenSSL-Universal
-  - IISecurity/Exchange (0.5.0):
+  - IISecurity/DeviceSafeTool (0.5.3):
     - IIBLL
     - IISwiftBaseUti
     - OpenSSL-Universal
-  - IISecurity/IISecurity (0.5.0):
+  - IISecurity/Exchange (0.5.3):
     - IIBLL
     - IISwiftBaseUti
     - OpenSSL-Universal
-  - IISwiftBaseUti (1.3.3):
-    - III18N
-    - IISwiftBaseUti/IIAspects (= 1.3.3)
-    - IISwiftBaseUti/IIBaseUti (= 1.3.3)
-    - IISwiftBaseUti/IICacheStorage (= 1.3.3)
-    - IISwiftBaseUti/IIComponent (= 1.3.3)
-    - IISwiftBaseUti/IICoreExtension (= 1.3.3)
-    - IISwiftBaseUti/IIHardWareAuthRequest (= 1.3.3)
-    - IISwiftBaseUti/IIRecognition (= 1.3.3)
-    - IISwiftBaseUti/YYCache (= 1.3.3)
+  - IISecurity/IISecurity (0.5.3):
+    - IIBLL
+    - IISwiftBaseUti
+    - OpenSSL-Universal
+  - IISwiftBaseUti (1.3.15):
+    - II18N
+    - IISwiftBaseUti/IIAspects (= 1.3.15)
+    - IISwiftBaseUti/IIBaseUti (= 1.3.15)
+    - IISwiftBaseUti/IICacheStorage (= 1.3.15)
+    - IISwiftBaseUti/IIComponent (= 1.3.15)
+    - IISwiftBaseUti/IICoreExtension (= 1.3.15)
+    - IISwiftBaseUti/IIHardWareAuthRequest (= 1.3.15)
+    - IISwiftBaseUti/IIRecognition (= 1.3.15)
+    - IISwiftBaseUti/YYCache (= 1.3.15)
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIAspects (1.3.3):
-    - III18N
+  - IISwiftBaseUti/IIAspects (1.3.15):
+    - II18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIBaseUti (1.3.3):
-    - III18N
+  - IISwiftBaseUti/IIBaseUti (1.3.15):
+    - II18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICacheStorage (1.3.3):
-    - III18N
+  - IISwiftBaseUti/IICacheStorage (1.3.15):
+    - II18N
     - IISwiftBaseUti/YYCache
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIComponent (1.3.3):
-    - III18N
+  - IISwiftBaseUti/IIComponent (1.3.15):
+    - II18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICoreExtension (1.3.3):
-    - III18N
+  - IISwiftBaseUti/IICoreExtension (1.3.15):
+    - II18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIHardWareAuthRequest (1.3.3):
-    - III18N
+  - IISwiftBaseUti/IIHardWareAuthRequest (1.3.15):
+    - II18N
     - IISwiftBaseUti/IIBaseUti
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIRecognition (1.3.3):
-    - III18N
+  - IISwiftBaseUti/IIRecognition (1.3.15):
+    - II18N
     - IISwiftBaseUti/IICoreExtension
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/YYCache (1.3.3):
-    - III18N
+  - IISwiftBaseUti/YYCache (1.3.15):
+    - II18N
     - SnapKit (~> 4.2.0)
   - OpenSSL-Universal (1.0.2.17)
   - SnapKit (4.2.0)
@@ -71,8 +71,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - II18N
     - IIBLL
-    - III18N
     - IISwiftBaseUti
     - OpenSSL-Universal
     - SnapKit
@@ -82,13 +82,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IIBLL: 6fd15b715658c9f66d27dd7428b65c91d3f47045
-  III18N: 89145d37dfb9153c1f6a4243657d07dd8033dc1b
-  IISecurity: 691e0b2fd75ad3366ea42958fb6638384461e75f
-  IISwiftBaseUti: d1e6d3084fa5e7348ccdea9dc8e83edc9a0a8299
+  II18N: 323a17a6c4af02c6fed5d942dbdf5e540e2643b0
+  IIBLL: d19bd39862eb72f305b74824b905bc7fa3508062
+  IISecurity: d55fd02254ec6673a516a6a854b933aaa590e1a4
+  IISwiftBaseUti: 17d4c08ec78e22c7169ddf6a83e7157ef0c1474a
   OpenSSL-Universal: ff04c2e6befc3f1247ae039e60c93f76345b3b5a
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: aa0435ece83f620466b5621a74384fca5172ee79
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0
