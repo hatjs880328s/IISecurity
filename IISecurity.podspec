@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISecurity'
-  s.version          = '0.5.4'
+  s.version          = '0.5.6'
   s.summary          = 'IISecurity'
 
 # This description is used to generate tags and improve search results.
