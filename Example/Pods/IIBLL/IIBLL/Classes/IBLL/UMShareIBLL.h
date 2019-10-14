@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UMShareIBLL.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,11 +15,20 @@ typedef void(^ShareAction)(void);
 //友盟分享
 @protocol UMShareIBLL <BHServiceProtocol>
 
-//友盟分享-纯文本
-- (void)shareMessage:(NSString *)msg customizeButtonIcon:(UIImage *)img customizeButtonTitle:(NSString *)btnTitle block:(ShareAction)block;
+//友盟分享-纯文本-WebEX
+- (void)shareMessage:(NSString *)msg customizeButtonIcon:(UIImage *)img customizeButtonTitle:(NSString *)btnTitle block:(id)block;
 
-//友盟分享-网址
+//友盟分享-网址-关于
 - (void)shareTitle:(NSString *)title description:(NSString *)dec thumImage:(UIImage *)img webpageUrl:(NSString *)url;
+
+//JS分享插件-文本
+- (void)shareJSText:(NSString *)text;
+
+//JS分享插件-Url
+- (void)shareJSUrl:(NSString *)url title:(NSString *)title description:(NSString *)dec thumImage:(id)thumImage;
+
+//JS分享插件-图像
+- (void)shareJSImage:(id)img title:(NSString *)title description:(NSString *)dec thumImage:(id)thumImage;
 
 
 @end

@@ -91,6 +91,9 @@ public enum III18NEnum: String {
     case agora_call_someone = "agora_call_someone"//拨号中
     case agora_call_someone_fail = "agora_call_someone_fail"//拨号失败
     case agora_already_join_channel = "agora_already_join_channel"//您已在頻道中
+    case agora_small_person = "agora_small_person"//至少选择两个人
+    case agora_change_camera = "agora_change_camera"//切换摄像头
+    case agora_change_video_audio = "agora_change_video_audio"//切换语音通话
     // -------webex---------
     case iiwebex_none = "iiwebex_none"//  無
     case iiwebex_whoseMeet = "iiwebex_whoseMeet"//  的会议
@@ -136,14 +139,14 @@ public enum III18NEnum: String {
     case iiwebex_meettitleAlert = "iiwebex_meettitleAlert"//w會議名稱不可為空
     case iiwebex_meetDownloadApp = "iiwebex_meetDownloadApp"//安装客户端？
     case iiwebex_meetDownloadConfirm = "iiwebex_meetDownloadConfirm"//安裝
-    
+
     case iiwebex_moreThan20Person = "iiwebex_moreThan20Person"//超过了建议选择人数限制
     case iiwebex_innerPerson = "iiwebex_innerPerson"//内部参会人
     case iiwebex_outerPerson = "iiwebex_outerPerson"//外部参会人
     case iiwebex_addOuterPersonTitle = "iiwebex_addOuterPersonTitle"//添加外部参会人
     case iiwebex_addOuterPersonAdd = "iiwebex_addOuterPersonAdd"//添加
     case iiwebex_outPersonisExists = "iiwebex_outPersonisExists"//联系人已经存在
-    
+
     case iiwebex_beforeNoMeet = "iiwebex_beforeNoMeet"//xx之前沒有會議
     case iiwebex_innerShare = "iiwebex_innerShare"//內部分享
     case iiwebex_emailError = "iiwebex_emailError"//郵箱格式不對

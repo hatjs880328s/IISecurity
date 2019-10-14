@@ -1,12 +1,12 @@
 //
 //  *******************************************
-//  
+//
 //  IIExchanageIBLL.h
 //  impcloud_dev
 //
 //  Created by Noah_Shan on 2019/4/29.
 //  Copyright © 2018 Inpur. All rights reserved.
-//  
+//
 //  *******************************************
 //
 
@@ -48,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
  附件分emaild-folder / attachmentid-folder/ 多级目录存储
  5.多邮件账户
  目前登陆云+的账户可以添加多个邮件账号，在数据库中存储的有whose字段
- 目前获取的用户信息是当前登陆云+账号的所有邮件账户的第一个
+ 目前获取的用户信息是当前登陆云+账号的所b有邮件账户的第一个
  清除缓存时，将所有信息删除包含所有账户
  6.证书处理
  目前是按照登陆云+用户的id存储
@@ -58,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 typedef void (^Handler)(UIViewController * con);
+
+typedef void (^LoginWithEmailHandler)(bool result, NSString * email);
 
 ///// 邮件功能模块对外暴露的接口
 @protocol IIExchangeIBLL <BHServiceProtocol>
@@ -70,6 +72,28 @@ typedef void (^Handler)(UIViewController * con);
 /// 清除所有缓存
 - (void)removeAllCache;
 
+/// 第三方使用exchange账号 - 返回是否登陆成功即可
+- (void)loginExchange:(LoginWithEmailHandler)result;
+
+/// 获取当前用户登录的第一个用户名密码信息 - 可为nil ["shanwzh@inspur.com": "123456789"]
+- (NSDictionary *)getExchangeAccountInfo;
+
+/// 获取当前用户的第一个邮箱账号的自定义的header信息 [如果没有信息返回的value是空字符串]
+- (NSDictionary *)getCustomHeaderInfo;
+
+// 获取当前用户登录的所有的邮箱model - IIExcEmailDetailPersonOCModel
+- (NSArray *)getALLEmailAddress;
+
+/// 根据企业ID，获取当前企业下所有的邮箱model - IIExcEmailDetailPersonOCModel
+- (NSArray *)getALLEmailAddress: (NSString *) enterpriseID;
+
+/// 根据email - address获取 request - header 信息
+- (NSDictionary *)getOneAccountInfo:(NSString *)ID ;
+
+// 根据自定义头中的value获取邮箱地址
+- (NSString *)decryptHeaderInfo:(NSString *)accoundAndPwdInfos ;
+
 @end
 
 NS_ASSUME_NONNULL_END
+

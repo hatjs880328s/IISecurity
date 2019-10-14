@@ -37,7 +37,7 @@
 
     ],
     "OpenSSL-Universal": [
-
+      "1.0.2.17"
     ]
   },
   "subspecs": [

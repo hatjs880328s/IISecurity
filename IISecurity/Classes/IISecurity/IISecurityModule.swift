@@ -92,7 +92,7 @@ extension IISecurityModule {
             return
         }
         let ttMins: Double = 60 * 20
-        if self.changedDate.distance(to: date) >= ttMins {
+        if self.changedDate.distances(to: date) >= ttMins {
             //符合条件-应该退出了
             if alertInfo != nil { return }
             alertInfo = OTAlertVw()

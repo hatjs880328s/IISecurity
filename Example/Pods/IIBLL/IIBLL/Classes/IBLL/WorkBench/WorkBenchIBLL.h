@@ -25,6 +25,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameter itemIdx: 0：日程， 1:会议 2：任务
 - (void) jump2WorkBenchVcThenShowOneItem: (NSInteger) itemIdx;
 
+/// 判断是否开启了Exchange
+- (BOOL)ifExchangeIsOpen;
+
+/// 前后台切换时获取basic数据源
+- (void)enterBackBasicInfo;
+
 @end
 
 NS_ASSUME_NONNULL_END

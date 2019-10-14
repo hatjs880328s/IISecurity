@@ -1,12 +1,12 @@
 //
 //  *******************************************
-//  
+//
 //  IIImageExtension.swift
 //  impcloud_dev
 //
 //  Created by Noah_Shan on 2019/3/7.
 //  Copyright © 2018 Inpur. All rights reserved.
-//  
+//
 //  *******************************************
 //
 
@@ -31,12 +31,16 @@ public class IIImage: NSObject {
     // 切换主题时 & 启动app时需要设置此属性
     @objc public static var themeType = 0
 
-    @objc public init?(named name: String) {
+    @objc public init?(named name: String, fileType type: String = "png", inDictionary dic: String?) {
         switch IIImage.themeType {
         case 1:
-            self.image = UIImage(named: "BlueTheme.bundle/\(name)")
+            let bundlePath = Bundle.main.path(forResource: "BlueTheme", ofType: "bundle") ?? ""
+            let path = Bundle(path: bundlePath)?.path(forResource: name, ofType: type, inDirectory: dic) ?? ""
+            self.image = UIImage(contentsOfFile: path)
         case 2:
-            self.image = UIImage(named: "GrayTheme.bundle/\(name)")
+            let bundlePath = Bundle.main.path(forResource: "GrayTheme", ofType: "bundle") ?? ""
+            let path = Bundle(path: bundlePath)?.path(forResource: name, ofType: type, inDirectory: dic) ?? ""
+            self.image = UIImage(contentsOfFile: path)
         default:
             self.image = UIImage(named: name)
         }
