@@ -27,7 +27,8 @@
     "SWIFT_COMPILATION_MODE": "wholemodule",
     "SWIFT_DISABLE_SAFETY_CHECKS": "YES",
     "SWIFT_ENFORCE_EXCLUSIVE_ACCESS": "debug-only",
-    "GCC_UNROLL_LOOPS": "YES"
+    "GCC_UNROLL_LOOPS": "YES",
+    "VALID_ARCHS": "x86_64 armv7 arm64"
   },
   "dependencies": {
     "IISwiftBaseUti": [

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISecurity'
-  s.version          = '0.5.7'
+  s.version          = '0.5.8'
   s.summary          = 'IISecurity'
 
 # This description is used to generate tags and improve search results.
@@ -54,7 +54,8 @@ Pod::Spec.new do |s|
 
   s.cocoapods_version = '>= 1.4.0'
 
-  s.pod_target_xcconfig = { 'SWIFT_OPTIMIZATION_LEVEL' => '-O', 'SWIFT_COMPILATION_MODE' => 'wholemodule', 'SWIFT_DISABLE_SAFETY_CHECKS' => 'YES', 'SWIFT_ENFORCE_EXCLUSIVE_ACCESS' => 'debug-only', 'GCC_UNROLL_LOOPS' => 'YES'}
+#  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+  s.pod_target_xcconfig = { 'SWIFT_OPTIMIZATION_LEVEL' => '-O', 'SWIFT_COMPILATION_MODE' => 'wholemodule', 'SWIFT_DISABLE_SAFETY_CHECKS' => 'YES', 'SWIFT_ENFORCE_EXCLUSIVE_ACCESS' => 'debug-only', 'GCC_UNROLL_LOOPS' => 'YES', 'VALID_ARCHS' => 'x86_64 armv7 arm64'}
 
   
   # s.resource_bundles = {
