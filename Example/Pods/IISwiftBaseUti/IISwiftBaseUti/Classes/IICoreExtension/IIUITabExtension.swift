@@ -35,7 +35,7 @@ public class IIUITabExtension {
 /// 邮箱列表空列表vw
 public class IIExcTabEmptyVw: UIView {
 
-    public var createBtn = UIButton()
+    public var createBtn = UIImageView()
 
     public var txtLb: UILabel = UILabel()
 
@@ -61,7 +61,7 @@ public class IIExcTabEmptyVw: UIView {
             make.centerX.equalTo(self.snp.centerX)
             make.centerY.equalTo(self.snp.centerY).offset(-20)
             make.width.equalTo(IIUITabExtension.aWeight)
-            make.height.equalTo(110)
+            make.height.equalTo(220)
         }
         self.backgroundColor = UIColor.white
         bgVw.layer.cornerRadius = 5
@@ -69,23 +69,19 @@ public class IIExcTabEmptyVw: UIView {
         bgVw.addSubview(createBtn)
         bgVw.addSubview(txtLb)
         createBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(10)
+            make.top.equalTo(0)
             make.centerX.equalTo(self.snp.centerX)
-            make.width.equalTo(61)
-            make.height.equalTo(61)
+            make.width.equalTo(290)
+            make.height.equalTo(200)
         }
-        if self.imgName == nil {
-            createBtn.setImage(UIImage(named: "webex_nocontent"), for: UIControl.State.normal)
-        } else {
-            createBtn.setImage(UIImage(named: self.imgName ?? ""), for: UIControl.State.normal)
-        }
+        createBtn.image = UIImage(named: self.imgName ?? "webex_nocontent")
         txtLb.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.snp.centerX)
-            make.top.equalTo(createBtn.snp.bottom).offset(10)
+            make.top.equalTo(createBtn.snp.bottom)
             make.width.equalTo(250)
             make.height.equalTo(20)
         }
-        txtLb.font = UIFont.systemFont(ofSize: 14)
+        txtLb.font = UIFont.systemFont(ofSize: 16)
         txtLb.textColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1)
         txtLb.text = showTitle
         txtLb.textAlignment = .center

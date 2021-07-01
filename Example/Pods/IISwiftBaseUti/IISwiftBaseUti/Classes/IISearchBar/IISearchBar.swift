@@ -77,7 +77,7 @@ public class IISearchBar: UIView {
         //圆角
         self.layer.cornerRadius = 5
         _ = self.field.rx.text.orEmpty
-            .throttle(0.5, scheduler: MainScheduler.instance)
+            .throttle(DispatchTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe { [weak self] events in
                 self?.del?.each5MillSecsTxtInfo(events.element ?? "")
         }

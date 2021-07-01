@@ -65,8 +65,14 @@ public class IIPhotoAuthRequest: IIHardwareAuthRequest {
     private func switchProgressAuth(state: PHAuthorizationStatus) {
         switch state {
         case .notDetermined:
-            //[用户还没有做出选择]弹窗获取权限-确认再执行success,否则执行fail
-            showRequestAlert()
+            //[用户还没有做出选择]直接去请求即可
+            //showRequestAlert()
+            PHPhotoLibrary.requestAuthorization {
+                if $0 != .authorized { return }
+                GCDUtils.toMianThreadProgressSome(youraction: {
+                    self.successAction()
+                })
+            }
         case .denied:
             //用户明确拒绝了使用相册的权限
             deniedRequestAlert()
@@ -76,6 +82,9 @@ public class IIPhotoAuthRequest: IIHardwareAuthRequest {
             nilAction()
         case .restricted:
             //家长控制一类的约束
+            deniedRequestAlert()
+        default:
+            // ios14 (xcode 12) 新增的个配置 limited
             deniedRequestAlert()
         }
     }

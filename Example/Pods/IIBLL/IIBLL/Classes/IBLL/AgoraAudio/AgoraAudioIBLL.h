@@ -30,6 +30,13 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - reason: .leave & .refuse
 -(void)leaveAndRejectJoinChannel:(NSUInteger)uid Reason:(NSInteger)reason;
 
+
+/// [主动离开频道或者拒绝加入的方法 - 退出企业& 切换企业时使用]
+///
+/// - Parameters:
+///   - uri: scheme
+- (void)manualTerminateAPP;
+
 @end
 
 NS_ASSUME_NONNULL_END

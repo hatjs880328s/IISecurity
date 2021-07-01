@@ -79,4 +79,46 @@ public class IITextAndFontExtension: NSObject {
             return self.getDirectStrCount(originTxt: midStr, itemStr: itemStr, count: midcount)
         }
     }
+    
+    /// 计算在某个宽度和字体下，需要多少个文字
+    @objc public func calculateChatCount(width: CGFloat, font: UIFont) -> Int {
+        let originStr = "天上飘，来5个字"
+        let number = 7.0
+
+        let originWidth = IITextAndFontExtension().textLength(text: originStr, font: font)
+        let eachWidth = originWidth / CGFloat(number)
+
+        return Int(width / eachWidth)
+    }
+
+    /// 计算在某个宽度和字体条件下，第一行文字个数 [originstr: 源字符串 currentstr: 递归执行时需要的str]
+    @objc public func calculateChatCount(width: CGFloat, font: UIFont, originStr: String, currentStr: String) -> Int {
+        // 二分法计算
+        let originWidth = IITextAndFontExtension().textLength(text: currentStr, font: font)
+        if originWidth > width {
+            // 取一半传入进去
+            let subStr = currentStr.substringToIndex(currentStr.length / 2)
+            if subStr.isEmpty { return currentStr.length }
+            return calculateChatCount(width: width, font: font, originStr: originStr, currentStr: subStr)
+        } else if width - originWidth > 10 {
+            // width 大于 originwidth 并且 多余10px
+            // 1.取出来剩下的字符串
+            let lastStr = originStr.substringFromIndex(currentStr.length)
+            // 2.遍历这个字符串直到相差小于10PX
+            var gotStr = currentStr
+            for eachchar in lastStr {
+                gotStr += "\(eachchar)"
+                let newWidth = IITextAndFontExtension().textLength(text: gotStr, font: font)
+                if newWidth > width {
+                    return gotStr.length - 1
+                } else {
+                    continue
+                }
+            }
+            return gotStr.length
+        } else {
+            // width 大于 originwidth 并且 小于10px
+            return currentStr.length
+        }
+    }
 }

@@ -30,6 +30,8 @@ typedef void(^ShareAction)(void);
 //JS分享插件-图像
 - (void)shareJSImage:(id)img title:(NSString *)title description:(NSString *)dec thumImage:(id)thumImage;
 
+- (void)shareIMG:(UIImage *)img title:(NSString *)title msg:(NSString *)msg customPlt:(NSString *)plt block:(id)block;
+
 
 @end
 

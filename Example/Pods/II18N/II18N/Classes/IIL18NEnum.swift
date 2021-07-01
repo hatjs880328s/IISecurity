@@ -185,4 +185,15 @@ public enum III18NEnum: String {
 
     case iiPersonCenterChangeCompany = "Enterprise_Select_Change"//切换企业
     case iinetwork_longtimeNoRes = "iinetwork_longtimeNoRes"//长时间未响应
+
+    // -------文件助手---------
+    case fileTrans_chatDetail = "ChatDetail_page_channelDetail"//聊天详情
+    case fileTrans_fileTransferHelper = "chat_filetransfer"//文件传输助手
+    case fileTrans_functionIntroTitle = "Robot_Page_Intro"//功能介绍
+    case fileTrans_functionIntro = "chat_filetransferIntro"//功能介绍内容
+    case fileTrans_chatImage = "ChatDetail_page_personalChannelImage"//聊天图片
+    case fileTrans_chatFile = "ChatDetail_page_personalChannelFile"//聊天文件
+    case fileTrans_searchChatList = "ChatDetail_page_channelMessages"//查找聊天记录
+    case fileTrans_setTop = "Channellist_page_sticky"//置顶
+    case fileTrans_setNotDisturb = "ChatDetail_page_doNotDisturb"//消息免打扰
 }

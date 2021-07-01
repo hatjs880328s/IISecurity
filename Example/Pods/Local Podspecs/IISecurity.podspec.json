@@ -1,6 +1,6 @@
 {
   "name": "IISecurity",
-  "version": "0.5.3",
+  "version": "0.5.7",
   "summary": "IISecurity",
   "description": "IISecurity:\n1.引入了安全监测与性能处理代码\n2.引入CryptSwift代码\n3.OpenSSL-Universal\n4.iiexchange-pkcs12",
   "homepage": "https://github.com/hatjs880328s/IISecurity",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IISecurity.git",
-    "tag": "0.5.3"
+    "tag": "0.5.7"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "requires_arc": true,
   "swift_versions": "5.0",

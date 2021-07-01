@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "QRScanResultDelegate.h"
+#import "BeeHive.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
